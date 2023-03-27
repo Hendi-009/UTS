@@ -241,14 +241,6 @@ class _HalamanLoginWidgetState extends State<HalamanLoginWidget> {
                       onPressed: () {
                         print('Button pressed ...');
                       },
-                      style: ElevatedButton.styleFrom(
-                        padding: EdgeInsets.symmetric(
-                            horizontal: 68.0, vertical: 20.0),
-                        shape: RoundedRectangleBorder(
-                          borderRadius: BorderRadius.circular(24.0),
-                        ),
-                        primary: Color(0xFF65A25E),
-                      ),
                       child: Text('Daftar'),
                     ),
                   ),

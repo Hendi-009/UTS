@@ -300,6 +300,35 @@ class _HalamanProfilWidgetState extends State<HalamanProfilWidget> {
                       ],
                     )),
               ),
+              Padding(
+                padding: EdgeInsetsDirectional.fromSTEB(0, 30, 0, 0),
+                child: ElevatedButton(
+                  onPressed: () {
+                    showDialog(
+                        context: context,
+                        builder: (context) => SimpleDialog(
+                              title: const Text('Disimpan'),
+                              contentPadding: EdgeInsets.all(20.0),
+                              children: [
+                                TextButton(
+                                    onPressed: () {
+                                      Navigator.pop(context);
+                                    },
+                                    child: Text('Tutup'))
+                              ],
+                            ));
+                  },
+                  child: const Text('Disimpan'),
+                  style: ElevatedButton.styleFrom(
+                    padding:
+                        EdgeInsets.symmetric(horizontal: 68.0, vertical: 20.0),
+                    shape: RoundedRectangleBorder(
+                      borderRadius: BorderRadius.circular(24.0),
+                    ),
+                    primary: Color(0xFF65A25E),
+                  ),
+                ),
+              ),
               Expanded(
                 child: Row(
                   mainAxisSize: MainAxisSize.max,
